@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Playground Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar" aria-label="Site header">
+      <a class="wordmark" href="#" aria-label="Local Playground home">LOCAL PLAYGROUND</a>
+      <nav class="toplinks" aria-label="Primary">
+        <a href="#board">WORK</a>
+        <a href="mailto:hello@example.com">EMAIL</a>
+        <a href="https://x.com" target="_blank" rel="noreferrer">TWITTER (X)</a>
+      </nav>
+    </header>
+
+    <aside class="side-note" aria-label="Project note">
+      <p>DESIGN STUDY</p>
+      <p>DRAG / SCROLL</p>
+      <p>NO. 01</p>
+    </aside>
+
+    <main class="stage" id="board">
+      <section class="intro" aria-label="Intro">
+        <p class="kicker">A local interpretation</p>
+        <h1>Collected experiments for a restless design wall.</h1>
+      </section>
+
+      <div class="viewport" data-viewport>
+        <div class="board" data-board>
+          <article class="tile tile-wide" style="--x: -420px; --y: -210px; --rot: -2deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-portrait.jpg" alt="Black and white portrait in soft daylight" />
+            </div>
+            <p>Portrait_Study.jpg</p>
+          </article>
+
+          <article class="tile tile-poster" style="--x: 20px; --y: -270px; --rot: 1.5deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-mountain-road.jpg" alt="Mountain road photographed in monochrome" />
+            </div>
+            <p>Mountain_Road.jpg</p>
+          </article>
+
+          <article class="tile tile-square" style="--x: 430px; --y: -150px; --rot: -1deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-landscape.jpg" alt="Quiet landscape photograph in grayscale" />
+            </div>
+            <p>Silent_Landscape.jpg</p>
+          </article>
+
+          <article class="tile tile-tall" style="--x: -610px; --y: 190px; --rot: 1.2deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-studio.jpg" alt="Studio portrait photograph in black and white" />
+            </div>
+            <p>Studio_Portrait.jpg</p>
+          </article>
+
+          <article class="tile tile-wide" style="--x: -110px; --y: 160px; --rot: -1.5deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-forest.jpg" alt="Forest valley photograph in gray tones" />
+            </div>
+            <p>Forest_Valley.jpg</p>
+          </article>
+
+          <article class="tile tile-square" style="--x: 500px; --y: 240px; --rot: 2deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-architecture.jpg" alt="Architecture photograph with stark shadows" />
+            </div>
+            <p>Architecture_Shadow.jpg</p>
+          </article>
+
+          <article class="tile tile-small" style="--x: -180px; --y: 520px; --rot: 2.2deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-ocean.jpg" alt="Ocean horizon photograph in monochrome" />
+            </div>
+            <p>Ocean_Horizon.jpg</p>
+          </article>
+
+          <article class="tile tile-tall" style="--x: 210px; --y: 520px; --rot: -2deg">
+            <div class="preview preview-photo">
+              <img class="photo" src="./assets/photo-urban.jpg" alt="Urban street photograph in black and white" />
+            </div>
+            <p>Urban_Street.jpg</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <div class="drag-hint" aria-hidden="true">
+      <svg viewBox="0 0 20 20">
+        <path d="M7.5 4.6 9.1 3a1.25 1.25 0 0 1 1.8 0l1.6 1.6M4.6 7.5 3 9.1a1.25 1.25 0 0 0 0 1.8l1.6 1.6m10.8-5 1.6 1.6a1.25 1.25 0 0 1 0 1.8l-1.6 1.6m-2.9 2.9-1.6 1.6a1.25 1.25 0 0 1-1.8 0l-1.6-1.6M10 3.3v13.4M3.3 10h13.4" />
+      </svg>
+      <span>SCROLL / DRAG TO MOVE</span>
+    </div>
+
+    <footer class="footerbar" aria-label="Footer">
+      <span>2026 LOCAL STUDY</span>
+      <button class="reset" type="button" data-reset>RESET VIEW</button>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
