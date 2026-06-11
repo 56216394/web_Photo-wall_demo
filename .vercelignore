@@ -1,0 +1,16 @@
+.vercel
+.env
+.env.*
+.git
+.gitignore
+node_modules
+assets
+scripts
+src
+tests
+package.json
+package-lock.json
+migration.config.example.json
+migration.config.json
+README.wiki-to-notion.md
+start-demo.sh
