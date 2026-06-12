@@ -4,107 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WX 列表页地图 Demo</title>
-    <link rel="stylesheet" href="./styles.css?v=amap-20260608-11" />
+    <link rel="stylesheet" href="./styles.css?v=amap-20260612-12" />
   </head>
   <body>
     <main class="demo-shell" aria-label="WX 列表页地图演示">
       <section class="phone" aria-label="酒店地图页">
         <div class="map-viewport" data-map-viewport>
           <div class="map-canvas" data-map-canvas id="real-map" aria-label="真实地图"></div>
-
-          <div class="statusbar" aria-hidden="true">
-            <span>9:41</span>
-            <div class="device-icons">
-              <span class="signal"></span>
-              <span class="wifi"></span>
-              <span class="battery"></span>
-            </div>
-          </div>
-
+          <div class="statusbar" aria-hidden="true"><span>9:41</span><div class="device-icons"><span class="signal"></span><span class="wifi"></span><span class="battery"></span></div></div>
           <header class="search-sheet" aria-label="搜索与筛选">
             <div class="search-row">
-              <button class="back-button" type="button" aria-label="返回">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" /></svg>
-              </button>
-              <div class="search-pill">
-                <strong>苏州</strong>
-                <span>住<br />离</span>
-                <span>04-12<br />04-13</span>
-                <span>成人 2<br />儿童 0</span>
-                <em>希尔顿酒店最...</em>
-              </div>
-              <button class="more-button" type="button" aria-label="更多">
-                <span></span><span></span><span></span>
-              </button>
-              <button class="target-button" type="button" aria-label="定位">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" /><circle cx="12" cy="12" r="2.5" /></svg>
-              </button>
+              <button class="back-button" type="button" aria-label="返回"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" /></svg></button>
+              <div class="search-pill"><strong>苏州</strong><span>住<br />离</span><span>04-12<br />04-13</span><span>成人 2<br />儿童 0</span><em>希尔顿酒店最...</em></div>
+              <button class="more-button" type="button" aria-label="更多"><span></span><span></span><span></span></button>
+              <button class="target-button" type="button" aria-label="定位"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" /><circle cx="12" cy="12" r="2.5" /></svg></button>
             </div>
-            <div class="filter-row">
-              <button type="button">区域位置<span></span></button>
-              <button class="selected" type="button">金鸡湖...<span></span></button>
-              <button type="button">价格星级<span></span></button>
-              <button type="button">筛选<span></span></button>
-            </div>
+            <div class="filter-row"><button type="button">区域位置<span></span></button><button class="selected" type="button">金鸡湖...<span></span></button><button type="button">价格星级<span></span></button><button type="button">筛选<span></span></button></div>
           </header>
-
           <div class="side-controls" aria-label="地图工具">
-            <button type="button" aria-label="反馈">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8l3 3v9H8z" /><path d="M5 8v12h11" /><path d="M14 4v5h5" /><path d="m12 14 2 2 4-5" /></svg>
-              <span>反馈</span>
-            </button>
-            <button type="button" data-reset-view aria-label="回到定位">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /></svg>
-            </button>
-            <button type="button" data-map-zoom-in aria-label="放大地图">+</button>
-            <button type="button" data-map-zoom-out aria-label="缩小地图">-</button>
+            <button type="button" aria-label="反馈"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8l3 3v9H8z" /><path d="M5 8v12h11" /><path d="M14 4v5h5" /><path d="m12 14 2 2 4-5" /></svg><span>反馈</span></button>
+            <button type="button" data-reset-view aria-label="回到定位"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M12 2v4M12 18v4M2 12h4M18 12h4" /></svg></button>
+            <button type="button" data-map-zoom-in aria-label="放大地图">+</button><button type="button" data-map-zoom-out aria-label="缩小地图">-</button>
           </div>
-
-          <footer class="bottom-tools" aria-label="底部功能">
-            <div class="scale" data-scale>6公里</div>
-            <button class="list-button" type="button">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
-              回列表
-            </button>
-          </footer>
+          <footer class="bottom-tools" aria-label="底部功能"><div class="scale" data-scale>6公里</div><button class="list-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>回列表</button></footer>
           <div class="home-indicator" aria-hidden="true"></div>
         </div>
       </section>
-
       <aside class="demo-panel" aria-label="演示控制">
-        <p class="eyebrow">WX 地图推荐区域 Demo</p>
-        <h1>精搜 POI 推荐居住区域</h1>
-        <div class="state-card">
-          <span>当前状态</span>
-          <strong data-state-label>S1 概览态</strong>
-          <small data-ratio-label>推荐区域占比 0%</small>
-        </div>
-        <div class="demo-actions">
-          <button type="button" data-demo-state="S3">缩小退出</button>
-          <button type="button" data-demo-state="S1">默认概览</button>
-          <button type="button" data-demo-state="S2M">多区域</button>
-          <button type="button" data-demo-state="S2">点击推荐</button>
-        </div>
-        <div class="zoom-actions">
-          <button type="button" data-zoom-out aria-label="缩小地图">-</button>
-          <span data-zoom-label>1.00x</span>
-          <button type="button" data-zoom-in aria-label="放大地图">+</button>
-        </div>
+        <p class="eyebrow">WX 地图推荐区域 Demo</p><h1>精搜 POI 推荐居住区域</h1>
+        <div class="state-card"><span>当前状态</span><strong data-state-label>S1 概览态</strong><small data-ratio-label>推荐区域占比 0%</small></div>
+        <div class="demo-actions"><button type="button" data-demo-state="S3">缩小退出</button><button type="button" data-demo-state="S1">默认概览</button><button type="button" data-demo-state="S2M">多区域</button><button type="button" data-demo-state="S2">点击推荐</button></div>
+        <div class="zoom-actions"><button type="button" data-zoom-out aria-label="缩小地图">-</button><span data-zoom-label>1.00x</span><button type="button" data-zoom-in aria-label="放大地图">+</button></div>
       </aside>
     </main>
-
-    <script>
-      window.AMAP_CONFIG = {
-        key: "2cb7398c27ddd77216b6ba6bf577cac0",
-        securityJsCode: "",
-      };
-      if (window.AMAP_CONFIG.securityJsCode) {
-        window._AMapSecurityConfig = {
-          securityJsCode: window.AMAP_CONFIG.securityJsCode,
-        };
-      }
-    </script>
+    <script>window.AMAP_CONFIG={key:"2cb7398c27ddd77216b6ba6bf577cac0",securityJsCode:""};if(window.AMAP_CONFIG.securityJsCode){window._AMapSecurityConfig={securityJsCode:window.AMAP_CONFIG.securityJsCode};}</script>
     <script src="https://webapi.amap.com/loader.js"></script>
-    <script src="./script.js?v=amap-20260608-9"></script>
+    <script src="./script.js?v=amap-20260612-10"></script>
   </body>
 </html>
